@@ -76,7 +76,7 @@ public class Cuenta {
             System.out.println(menu.getClass().getSimpleName() + ":");
             System.out.println("\tPlato: " + menu.getNombrePlato());
             System.out.println("\tValor inicial: " + menu.getValorInicial());
-            menu.Interfaz();
+            menu.sistema();
             System.out.println("\tValor del menú: " + menu.getValoraMenu());
         }
         System.out.println("Subtotal: " + subTotal);

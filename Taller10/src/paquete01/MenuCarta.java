@@ -43,7 +43,7 @@ class MenuCarta extends Menu {
         this.valorServicio = valorServicio;
     }
 
-    public void Interfaz() {
+    public void sistema() {
         System.out.println("\tValor de porción de guarnicion: " + getValorGuarnicion());
         System.out.println("\tValor Bebida: " + getValorBebida());
         System.out.println("\tValor del servicio: " + getValorServicio());
