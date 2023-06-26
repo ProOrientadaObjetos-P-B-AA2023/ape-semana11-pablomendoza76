@@ -8,27 +8,46 @@ package paquete01;
  *
  * @author Usuario iTC
  */
-public class MenuCarta extends Menu {
-    private double valorGuarnicion;
-    private double valorBebida;
-    private double porcentajeServicio;
+class MenuCarta extends Menu {
+    public double valorGuarnicion;
+    public double valorBebida;
+    public double valorServicio;
 
-    public MenuCarta(String nombrePlato, double valorMenu, double valorInicialMenu, double valorGuarnicion,
-                     double valorBebida, double porcentajeServicio) {
-        super(nombrePlato, valorMenu, valorInicialMenu);
+    public MenuCarta(String nombrePlato, double valoraMenu, double valorInicial, double valorGuarnicion, double valorBebida, double valorServicio) {
+        super(nombrePlato, valoraMenu, valorInicial);
         this.valorGuarnicion = valorGuarnicion;
         this.valorBebida = valorBebida;
-        this.porcentajeServicio = porcentajeServicio;
     }
 
-    public String toString() {
-        return "Menú a la Carta\n" +
-                "Nombre del plato: " + nombrePlato + "\n" +
-                "Valor del menú: " + valorMenu + "\n" +
-                "Valor inicial del menú: " + valorInicialMenu + "\n" +
-                "Valor de porción de guarnición: " + valorGuarnicion + "\n" +
-                "Valor de bebida: " + valorBebida + "\n" +
-                "Porcentaje adicional por servicio: " + porcentajeServicio;
+    public double getValorGuarnicion() {
+        return valorGuarnicion;
+    }
+
+    public void setValorGuarnicion(double valorGuarnicion) {
+        this.valorGuarnicion = valorGuarnicion;
+    }
+
+    public double getValorBebida() {
+        return valorBebida;
+    }
+
+    public void setValorBebida(double valorBebida) {
+        this.valorBebida = valorBebida;
+    }
+
+    public double getValorServicio() {
+        return valorServicio;
+    }
+
+    public void setValorServicio(double valorServicio) {
+        this.valorServicio = valorServicio;
+    }
+
+    public void Interfaz() {
+        System.out.println("\tValor de porción de guarnicion: " + getValorGuarnicion());
+        System.out.println("\tValor Bebida: " + getValorBebida());
+        System.out.println("\tValor del servicio: " + getValorServicio());
     }
 }
+
 

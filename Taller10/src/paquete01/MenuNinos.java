@@ -8,23 +8,34 @@ package paquete01;
  *
  * @author Usuario iTC
  */
-public class MenuNinos extends Menu {
-    private double valorHelado;
-    private double valorPastel;
+class MenuNinos extends Menu {
+    public double porcionHelado;
+    public double porcionPastel;
 
-    public MenuNinos(String nombrePlato, double valorMenu, double valorInicialMenu, double valorHelado,
-                     double valorPastel) {
-        super(nombrePlato, valorMenu, valorInicialMenu);
-        this.valorHelado = valorHelado;
-        this.valorPastel = valorPastel;
+    public MenuNinos(String nombrePlato, double valoraMenu, double valorInicial, double porcionHelado, double porcionPastel) {
+        super(nombrePlato, valoraMenu, valorInicial);
+        this.porcionHelado = porcionHelado;
+        this.porcionPastel = porcionPastel;
     }
 
-    public String toString() {
-        return "Menú de Niños\n" +
-                "Nombre del plato: " + nombrePlato + "\n" +
-                "Valor del menú: " + valorMenu + "\n" +
-                "Valor inicial del menú: " + valorInicialMenu + "\n" +
-                "Valor de porción de helado: " + valorHelado + "\n" +
-                "Valor de porción de pastel: " + valorPastel;
+    public double getPorcionHelado() {
+        return porcionHelado;
+    }
+
+    public void setPorcionHelado(double porcionHelado) {
+        this.porcionHelado = porcionHelado;
+    }
+
+    public double getPorcionPastel() {
+        return porcionPastel;
+    }
+
+    public void setPorcionPastel(double porcionPastel) {
+        this.porcionPastel = porcionPastel;
+    }
+
+    public void Interfaz() {
+        System.out.println("\tValor de porción de Helado: " + getPorcionHelado());
+        System.out.println("\tValor de porción de pastel: " + getPorcionPastel());
     }
 }

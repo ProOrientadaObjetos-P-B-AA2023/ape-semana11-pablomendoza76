@@ -8,24 +8,35 @@ package paquete01;
  *
  * @author Usuario iTC
  */
-public class MenuDia extends Menu {
-    private double valorPostre;
-    private double valorBebida;
+class MenuDia extends Menu {
+    public double valorPostre;
+    public double valorBebida;
 
-    public MenuDia(String nombrePlato, double valorMenu, double valorInicialMenu, double valorPostre,
-                   double valorBebida) {
-        super(nombrePlato, valorMenu, valorInicialMenu);
+    public MenuDia(String nombrePlato, double valoraMenu, double valorInicial, double valorPostre, double valorBebida) {
+        super(nombrePlato, valoraMenu, valorInicial);
         this.valorPostre = valorPostre;
         this.valorBebida = valorBebida;
     }
 
-    public String toString() {
-        return "Menú del Día\n" +
-                "Nombre del plato: " + nombrePlato + "\n" +
-                "Valor del menú: " + valorMenu + "\n" +
-                "Valor inicial del menú: " + valorInicialMenu + "\n" +
-                "Valor de postre: " + valorPostre + "\n" +
-                "Valor de bebida: " + valorBebida;
+    public double getValorPostre() {
+        return valorPostre;
+    }
+
+    public void setValorPostre(double valorPostre) {
+        this.valorPostre = valorPostre;
+    }
+
+    public double getValorBebida() {
+        return valorBebida;
+    }
+
+    public void setValorBebida(double valorBebida) {
+        this.valorBebida = valorBebida;
+    }
+
+    public void Interfaz() {
+        System.out.println("\tValor del Postre: " + getValorPostre());
+        System.out.println("\tValor de Bebida: " + getValorBebida());
     }
 }
 

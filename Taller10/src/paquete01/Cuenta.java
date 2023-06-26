@@ -1,50 +1,87 @@
 package paquete01;
 
 import java.util.ArrayList;
-import java.util.List;
-
 public class Cuenta {
-    private String nombreCliente;
-    private double subtotal;
-    private double iva;
-    private List<Menu> listaMenu;
-    private double valorTotal;
+    public String nombreCliente;
+    public ArrayList<Menu> menus;
+    public double valorTotal;
+    public double subTotal;
+    public double Iva;
 
-    public Cuenta(String nombreCliente, ArrayList<Menu> lista, double iva) {
+    public Cuenta(String nombreCliente, double Iva) {
         this.nombreCliente = nombreCliente;
-        this.iva = iva;
-        this.listaMenu = new ArrayList<>();
+        this.Iva = Iva;
+        this.menus = new ArrayList<>();
+        this.subTotal = 0.0;
+        this.valorTotal = 0.0;
     }
 
-    public void agregarMenu(Menu menu) {
-        listaMenu.add(menu);
-        subtotal += menu.valorMenu;
+    public void Total() {
+        valorTotal = subTotal + (subTotal * (Iva /100));
     }
 
-    public double calcularValorTotal() {
-        valorTotal = subtotal + (subtotal * (iva / 100));
+    public String getNombreCliente() {
+        return nombreCliente;
+    }
+
+    public void setNombreCliente(String nombreCliente) {
+        this.nombreCliente = nombreCliente;
+    }
+
+    public ArrayList<paquete01.Menu> getMenus() {
+        return menus;
+    }
+
+    public void setMenus(ArrayList<paquete01.Menu> menus) {
+        this.menus = menus;
+    }
+
+    public double getValorTotal() {
         return valorTotal;
     }
 
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("Cliente: ").append(nombreCliente).append("\n");
-        sb.append("Subtotal: ").append(subtotal).append("\n");
-        sb.append("IVA: ").append(iva).append("%\n");
-        sb.append("Menús:\n");
-        for (Menu menu : listaMenu) {
-            sb.append(menu.toString()).append("\n");
+    public void setValorTotal(double valorTotal) {
+        this.valorTotal = valorTotal;
+    }
+
+    public double getSubTotal() {
+        return subTotal;
+    }
+
+    public void setSubTotal(double subTotal) {
+        this.subTotal = subTotal;
+    }
+
+    public double getIva() {
+        return Iva;
+    }
+
+    public void setIva(double iva) {
+        Iva = iva;
+    }
+
+    public void ArrayMenu(paquete01.Menu menu) {
+        menus.add(menu);
+        subTotal = subTotal + menu.getValoraMenu();
+        Total();
+    }
+
+
+    public void Factura() {
+        System.out.println("--------------------------------------");
+        System.out.println("****************FACTURA***************");
+        System.out.println("Cliente: " + nombreCliente);
+        for (Menu menu : menus) {
+            System.out.println(" ");
+            System.out.println(menu.getClass().getSimpleName() + ":");
+            System.out.println("\tPlato: " + menu.getNombrePlato());
+            System.out.println("\tValor inicial: " + menu.getValorInicial());
+            menu.Interfaz();
+            System.out.println("\tValor del menú: " + menu.getValoraMenu());
         }
-        sb.append("Valor total a pagar: ").append(calcularValorTotal());
-        return sb.toString();
-    }
-
-    void establecerSubtotal() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    void establecerValorCancelar() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        System.out.println("Subtotal: " + subTotal);
+        System.out.println("IVA: " + Iva);
+        System.out.println("Total a pagar: " + valorTotal);
     }
 }
 

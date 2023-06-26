@@ -1,24 +1,38 @@
 package paquete01;
-public abstract class Menu {
-    protected String nombrePlato;
-    protected double valorMenu;
-    protected double valorInicialMenu;
+abstract public class Menu {
+    public String nombrePlato;
+    public double valoraMenu;
+    public double valorInicial;
 
-    public Menu(String nombrePlato, double valorMenu, double valorInicialMenu) {
+    public Menu(String nombrePlato, double valoraMenu, double valorInicial) {
         this.nombrePlato = nombrePlato;
-        this.valorMenu = valorMenu;
-        this.valorInicialMenu = valorInicialMenu;
+        this.valoraMenu = valoraMenu;
+        this.valorInicial = valorInicial;
     }
 
-    public abstract String toString();
-
-    void establecerValorMenu() {
-        throw new UnsupportedOperationException("Not supported yet."); 
+    public String getNombrePlato() {
+       return nombrePlato;
     }
 
-    String getNombrePlato() {
-        throw new UnsupportedOperationException("Not supported yet."); 
+    public void setNombrePlato(String nombrePlato) {
+        this.nombrePlato = nombrePlato;
     }
+
+    public double getValoraMenu() {
+        return valoraMenu;
+    }
+
+    public void setValoraMenu(double valoraMenu) {
+        this.valoraMenu = valoraMenu;
+    }
+
+    public double getValorInicial() {
+        return valorInicial;
+    }
+
+    public void setValorInicial(double valorInicial) {
+        this.valorInicial = valorInicial;
+    }
+
+    public abstract void Interfaz();
 }
-
-

@@ -8,20 +8,24 @@ package paquete01;
  *
  * @author Usuario iTC
  */
-public class MenuEconomico extends Menu {
-    private double porcentajeDescuento;
+class MenuEconomico extends Menu{
+    public double descuento;
 
-    public MenuEconomico(String nombrePlato, double valorMenu, double valorInicialMenu, double porcentajeDescuento, double par1) {
-        super(nombrePlato, valorMenu, valorInicialMenu);
-        this.porcentajeDescuento = porcentajeDescuento;
+    public MenuEconomico(String nombrePlato, double valoraMenu, double valorInicial, double descuento) {
+        super(nombrePlato, valoraMenu, valorInicial);
+        this.descuento = descuento;
     }
 
-    public String toString() {
-        return "Menú Económico\n" +
-                "Nombre del plato: " + nombrePlato + "\n" +
-                "Valor del menú: " + valorMenu + "\n" +
-                "Valor inicial del menú: " + valorInicialMenu + "\n" +
-                "Porcentaje de descuento: " + porcentajeDescuento;
+    public double getDescuento() {
+        return descuento;
+    }
+
+    public void setDescuento(double descuento) {
+        this.descuento = descuento;
+    }
+
+    public void Interfaz() {
+        System.out.println("\tValor descuento: " + getDescuento());
     }
 }
 
