@@ -24,7 +24,7 @@ class MenuEconomico extends Menu{
         this.descuento = descuento;
     }
 
-    public void Interfaz() {
+    public void sistema() {
         System.out.println("\tValor descuento: " + getDescuento());
     }
 }

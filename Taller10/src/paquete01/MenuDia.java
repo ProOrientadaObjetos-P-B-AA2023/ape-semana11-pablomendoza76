@@ -34,7 +34,7 @@ class MenuDia extends Menu {
         this.valorBebida = valorBebida;
     }
 
-    public void Interfaz() {
+    public void sistema() {
         System.out.println("\tValor del Postre: " + getValorPostre());
         System.out.println("\tValor de Bebida: " + getValorBebida());
     }

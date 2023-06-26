@@ -34,7 +34,7 @@ class MenuNinos extends Menu {
         this.porcionPastel = porcionPastel;
     }
 
-    public void Interfaz() {
+    public void sistema() {
         System.out.println("\tValor de porción de Helado: " + getPorcionHelado());
         System.out.println("\tValor de porción de pastel: " + getPorcionPastel());
     }
