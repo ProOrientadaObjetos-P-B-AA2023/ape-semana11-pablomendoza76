@@ -34,5 +34,5 @@ abstract public class Menu {
         this.valorInicial = valorInicial;
     }
 
-    public abstract void Interfaz();
+    public abstract void sistema();
 }
