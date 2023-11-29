@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="abcdefg">
+    <mxGraphModel dx="1200" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageFormat="A4" pageScale="1" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="K6PfrMmSdQ8nsYg5tyb8-19" parent="0" />
+        <mxCell id="K6PfrMmSdQ8nsYg5tyb8-1" style="group" vertex="1" connectable="0" connectEdges="1" collapse="0" select="1" geometrystyle="round=0;whiteSpace=wrap;html=1;" childLayout="stackLayout" value="" vertexBounds="1">
+          <mxGeometry x="100" y="180" width="620" height="240" as="geometry" />
+          <mxCell id="K6PfrMmSdQ8nsYg5tyb8-2" style="group" vertex="1" connectable="0" connectEdges="1" collapse="0" select="1" geometrystyle="round=0;whiteSpace=wrap;html=1;" childLayout="stackLayout" value="" vertexBounds="1">
+            <mxGeometry x="0" y="0" width="620" height="240" as="geometry" />
+            <mxCell id="K6PfrMmSdQ8nsYg5tyb8-13" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" connectable="0" connectEdges="1" collapse="0" select="1" value="Usuarios">
+              <mxGeometry x="140" y="20" width="120" height="60" as="geometry" />
+            </mxCell>
+            <mxCell id="K6PfrMmSdQ8nsYg5tyb8-14" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" connectable="0" connectEdges="1" collapse="0" select="1" value="UserID\nNombre\nEmail" connect="1" vertexBounds="1" connectableEdges="0">
+              <mxGeometry x="150" y="50" width="100" height="40" as="geometry" />
+            </mxCell>
+            <mxCell id="K6PfrMmSdQ8nsYg5tyb8-3" style="group" vertex="1" connectable="0" connectEdges="1" collapse="0" select="1" geometrystyle="round=0;whiteSpace=wrap;html=1;" childLayout="stackLayout" value="" vertexBounds="1">
+              <mxGeometry x="200" y="120" width="320" height="240" as="geometry" />
+              <mxCell id="K6PfrMmSdQ8nsYg5tyb8-15" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" connectable="0" connectEdges="1" collapse="0" select="1" value="Publicaciones">
+                <mxGeometry x="20" y="20" width="120" height="60" as="geometry" />
+              </mxCell>
+              <mxCell id="K6PfrMmSdQ8nsYg5tyb8-16" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" connectable="0" connectEdges="1" collapse="0" select="1" value="PublicacionID\nContenido\nFechaPublicacion\nUserID" connect="1" vertexBounds="1" connectableEdges="0">
+                <mxGeometry x="30" y="50" width="100" height="40" as="geometry" />
+              </mxCell>
+              <mxCell id="K6PfrMmSdQ8nsYg5tyb8-17" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" connectable="0" connectEdges="1" collapse="0" select="1" value="Amigos">
+                <mxGeometry x="180" y="20" width="120" height="60" as="geometry" />
+              </mxCell>
+              <mxCell id="K6PfrMmSdQ8nsYg5tyb8-18" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" connectable="0" connectEdges="1" collapse="0" select="1" value="Usuario1ID\nUsuario2ID" connect="1" vertexBounds="1" connectableEdges="0">
+                <mxGeometry x="190" y="50" width="100" height="40" as="geometry" />
+              </mxCell>
+            </mxCell>
+            <mxCell id="K6PfrMmSdQ8nsYg5tyb8-4" style="group" vertex="1" connectable="0" connectEdges="1" collapse="0" select="1" geometrystyle="round=0;whiteSpace=wrap;html=1;" childLayout="stackLayout" value="" vertexBounds="1">
+              <mxGeometry x="400" y="120" width="220" height="240" as="geometry" />
+              <mxCell id="K6PfrMmSdQ8nsYg5tyb8-20" style="shape=datastore;whiteSpace=wrap;html=1;" vertex="1" connectable="0" connectEdges="1" collapse="0" select="1" value="Comentarios">
+                <mxGeometry x="20" y="20" width="120" height="60" as="geometry" />
+              </mxCell>
+              <mxCell id="K6PfrMmSdQ8nsYg5tyb8-21" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" connectable="0" connectEdges="1" collapse="0" select="1" value="ComentarioID\nContenido\nFechaComentario\nUserID\nPublicacionID" connect="1" vertexBounds="1" connectableEdges="0">
+                <mxGeometry x="30" y="50" width="100" height="40" as="geometry" />
+              </mxCell>
+            </mxCell>
+          </mxCell>
+        </mxCell>
+      </root>
+    </
